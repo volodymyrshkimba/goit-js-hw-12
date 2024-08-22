@@ -17,16 +17,20 @@
 }
 
 .loader {
-  position: absolute;
-  left: 50%;
+  margin-left: auto;
+  margin-right: auto;
   width: 48px;
   height: 48px;
   border: 5px solid;
   border-color: #ff3d00 transparent;
   border-radius: 50%;
-  display: inline-block;
+  display: block;
   box-sizing: border-box;
   animation: rotation 1s linear infinite;
+}
+
+.loader.own-styles {
+  margin-top: 32px;
 }
 
 @keyframes rotation {
@@ -112,5 +116,24 @@ input:focus {
 
 .search-btn:hover,
 .search-btn:focus {
+  background-color: #6c8cff;
+}
+
+.load-more-btn {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 32px;
+  border-radius: 8px;
+  width: 125px;
+  height: 40px;
+  border: none;
+  background-color: #4e75ff;
+  font-size: 16px;
+  letter-spacing: 0.04em;
+  color: #fff;
+}
+
+.load-more-btn:hover,
+.load-more-btn:focus {
   background-color: #6c8cff;
 }
